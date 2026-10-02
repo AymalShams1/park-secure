@@ -28,7 +28,7 @@ public abstract class UserJPAEntity {
     private Instant createdAt;
 
     @Embedded
-    private ContactInfoJPAEntity contactInfo;
+    private UserInfoEmbedded contactInfo;
 
 
 }

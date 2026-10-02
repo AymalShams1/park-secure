@@ -10,14 +10,7 @@ import lombok.Setter;
 @Setter
 @Table(name = "clients")
 @PrimaryKeyJoinColumn(name = "user_id")
-public class ClientJPAEntity {
-
-    @Id
-    @Column(name = "client_id", nullable = false, unique = true)
-    private Long clientId;
-
-    @Column(name = "client_no", unique = true)
-    private String clientNumber;
+public class ClientJPAEntity extends UserJPAEntity {
 
     @Column(name = "account_status")
     @Enumerated(EnumType.STRING)

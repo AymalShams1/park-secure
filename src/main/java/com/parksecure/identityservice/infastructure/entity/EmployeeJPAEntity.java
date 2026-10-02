@@ -16,7 +16,7 @@ import java.util.Set;
 public class EmployeeJPAEntity extends UserJPAEntity {
 
     @Column(unique = true, nullable = false)
-    private String employeeNumber;
+    private Long employeeNumber;
 
     @Enumerated(EnumType.STRING)
     public Set<Role> Roles;
@@ -24,6 +24,5 @@ public class EmployeeJPAEntity extends UserJPAEntity {
     @Column(name = "account_status")
     @Enumerated(EnumType.STRING)
     private AccountStatus accountStatus;
-
 
 }
